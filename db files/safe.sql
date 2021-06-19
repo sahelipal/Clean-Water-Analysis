@@ -1,0 +1,127 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jun 18, 2021 at 09:57 AM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `water`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `safe`
+--
+
+CREATE TABLE `safe` (
+  `id` varchar(3) DEFAULT NULL,
+  `wi` varchar(18) DEFAULT NULL,
+  `ph` varchar(2) DEFAULT NULL,
+  `y` varchar(2) DEFAULT NULL,
+  `loc` varchar(79) DEFAULT NULL,
+  `y1` varchar(2) DEFAULT NULL,
+  `Safety` varchar(17) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `safe`
+--
+
+INSERT INTO `safe` (`id`, `wi`, `ph`, `y`, `loc`, `y1`, `Safety`) VALUES
+('0', '28.571428571428573', '7.', '0.', 'DAMANGANGA AT D/S OF MADHUBAN, DAMAN', '0.', 'Not Safe'),
+('1', '28.571428571428573', '7.', '0.', 'ZUARI AT D/S OF PT. WHERE KUMBARJRIA CANAL JOINS, GOA', '0.', 'Not Safe'),
+('2', '74.25714285714285', '6.', '0.', 'ZUARI AT PANCHAWADI', '0.', 'Not Safe'),
+('3', '77.11428571428571', '7.', '0.', 'MANDOVI AT NEGHBOURHOOD OF PANAJI, GOA', '0.', 'Not Safe'),
+('4', '71.39999999999999', '6.', '0.', 'MANDOVI AT TONCA, MARCELA, GOA', '0.', 'Not Safe'),
+('5', '77.11428571428571', '7.', '0.', 'RIVER CHAPORA NEAR ALORNA FORT ,PERNEM', '0.', 'Not Safe'),
+('6', '77.11428571428571', '7.', '0.', 'RIVER CHAPORA AT SIOLIM', '0.', 'Not Safe'),
+('7', '86.65714285714284', '7.', '1.', 'AMBA RIVER AT D/S OF WAKEN BRIDGENANU/S OF JS PETROCHEMICALS, WAKENPHATA, ROHA', '1.', 'Safe for Drinking'),
+('8', '86.65714285714284', '7.', '1.', 'BHATSA AT D/S OF PISE DAM NEAR PISE VILLAGE (ULHAS), MAHARASHTRA', '1.', 'Safe for Drinking'),
+('9', '86.65714285714284', '8.', '1.', 'SURYA RIVER AT MIDC PUMPING STATION, GARVASHET, PALGHAR, THANE', '1.', 'Safe for Drinking'),
+('10', '84.74285714285715', '7.', '1.', 'ACHENKOIL AT THUMPAMON, KERALA', '1.', 'Safe for Drinking'),
+('11', '81.88571428571429', '7.', '1.', 'ACHENKOIL AT CHENNITHULA, KERALA', '1.', 'Safe for Drinking'),
+('12', '80.94285714285715', '7.', '1.', 'RIVER VALAPATTANAM AT PARASSINIKADAVU, KANNUR', '1.', 'Safe for Drinking'),
+('13', '87.60000000000001', '7.', '1.', 'VAMANAPURAM, KERALA', '1.', 'Safe for Drinking'),
+('14', '83.8', '7.', '1.', 'NAGAVALLI AT THOTAPALLI REGULATOR, A.P.', '1.', 'Safe for Drinking'),
+('15', '86.65714285714284', '8.', '1.', 'D/S OF KARAKAVAGU AT PALONCHA,  KHAMMAM, A.P.', '1.', 'Safe for Drinking'),
+('16', '86.65714285714284', '7.', '1.', 'KALI AT D/S WEST COAST PAPER MILL, KARNATAKA', '1.', 'Safe for Drinking'),
+('17', '89.5142857142857', '7.', '1.', 'KALI AT U/S OF WCPM, DANDELI, KARNATAKA', '1.', 'Safe for Drinking'),
+('20', '75.2', '7.', '0.', 'BUDHABALANGA, D/S OF BARIPADA TOWN', '0.', 'Not Safe'),
+('21', '72.34285714285714', '7.', '0.', 'BUDHABALANGA AT BALASORE D/S', '0.', 'Not Safe'),
+('22', '79.97142857142856', '7.', '0.', 'VANSADHARA AT MUNIGUDA (D/S OF M/S VEDANTAALUMINA PROJECT)', '0.', 'Not Safe'),
+('23', '79.97142857142856', '7.', '0.', 'VANSADHARA ATGUNUPUR (INTERSTATE BOUNDRY)', '0.', 'Not Safe'),
+('25', '81.88571428571429', '7.', '1.', 'PALAR AT VANIYAMBADI WATER SUPPLY HEAD WORK, TAMILNADU', '1.', 'Safe for Drinking'),
+('26', '37.142857142857146', '7.', '0.', 'VASISTA AT SALEM, D/S OF SAGO INDUSRIES EFFLUENT, TAMILNADU', '0.', 'Not Safe'),
+('28', '68.54285714285713', '7.', '0.', 'GHAGGAR AT MUBARAKPUR REST HOUSE (PATIALA), PUNJAB', '0.', 'Not Safe'),
+('29', '60.91428571428571', '7.', '0.', 'GHAGGAR AT 100M D/S CONF. WITH R. SARASWATI (PATIALA),PUNJAB', '0.', 'Not Safe'),
+('30', '60.91428571428571', '7.', '0.', 'U/S SARDULGARH, PUNJAB', '0.', 'Not Safe'),
+('31', '80.94285714285715', '6.', '1.', 'GAGGAR RIVER WHEN ENTERING IN RAJASTHAN FROM HARYANA NEAR RD NO. 629, RAJASTHAN', '1.', 'Safe for Drinking'),
+('32', '89.5142857142857', '7.', '1.', 'RIVER MARKANDA AT PAONTA, DISTT. SIRMOUR, H.P.', '1.', 'Safe for Drinking'),
+('33', '86.65714285714284', '8.', '1.', 'RIVER JAWAI AT JAWAI DAM, SIROHI, RAJASTHAN', '1.', 'Safe for Drinking'),
+('34', '60.94285714285714', '3.', '0.', 'KYRHUKHLA NEAR SUTNGA KHLIERIAT,JAINTIA HILLS DT.,MEGHALAYA', '0.', 'Not Safe'),
+('35', '89.5142857142857', '7.', '1.', 'KYNSHI RIVER AT SOHIONG, WEST KHASI HILLS', '1.', 'Safe for Drinking'),
+('38', '65.71428571428571', '7.', '0.', 'TLAWNG UPSTREAM AIZAWL', '0.', 'Not Safe'),
+('39', '89.5142857142857', '7.', '1.', 'TLAWNG DOWNSTREAM AIZAWL', '1.', 'Safe for Drinking'),
+('40', '81.88571428571429', '7.', '1.', 'GUMTI AT U/S SOUTH TRIPURA,TRIPURA', '1.', 'Safe for Drinking'),
+('41', '79.02857142857144', '7.', '0.', 'GUMTI AT D/S SOUTH TRIPURA, TRIPURA', '0.', 'Not Safe'),
+('44', '81.88571428571429', '7.', '1.', 'DAMANGANGA AT KACHIGAON U\\S AT GIDC WIER,GUJARAT', '1.', 'Safe for Drinking'),
+('47', '78.08571428571429', '7.', '0.', 'AMLAKHADI AFTER CONFL. OF W. WATER FROM ANKLESH,GUJARAT', '0.', 'Not Safe'),
+('48', '64.74285714285715', '8.', '0.', 'BALEHWAR KHADI AT N.H. NO 8', '0.', 'Not Safe'),
+('49', '86.65714285714284', '7.', '1.', 'NAGAVALLI AT THOTAPALLI REGULATOR, A.P.', '1.', 'Safe for Drinking'),
+('50', '83.8', '8.', '1.', 'D/S OF KARAKAVAGU AT PALONCHA,  KHAMMAM, A.P.', '1.', 'Safe for Drinking'),
+('51', '84.74285714285715', '7.', '1.', 'KALI AT D/S WEST COAST PAPER MILL, KARNATAKA', '1.', 'Safe for Drinking'),
+('52', '84.74285714285715', '7.', '1.', 'KUMARADHARA NAN U/S OF UPPINAGADY TOWN BEFORE CONFLUENCE WITH RIVER NETHRAVATHI', '1.', 'Safe for Drinking'),
+('53', '75.2', '7.', '0.', 'BUDHABALANGA, D/S OF BARIPADA TOWN', '0.', 'Not Safe'),
+('54', '66.62857142857142', '8.', '0.', 'RUSHIKULYA AT GANJAM D/S, ORISSA', '0.', 'Not Safe'),
+('55', '60.0', '8.', '0.', 'CORINGA RIVER', '0.', 'Not Safe'),
+('56', '48.57142857142857', '6.', '0.', 'MAHE RIVER', '0.', 'Not Safe'),
+('57', '83.8', '6.', '1.', 'TAMBIRAPARANI AT MURAPPANADU, TAMILNADU', '1.', 'Safe for Drinking'),
+('59', '60.91428571428571', '7.', '0.', 'GHAGGAR AT 100M D/S CONF. WITH R. SARASWATI (PATIALA),PUNJAB', '0.', 'Not Safe'),
+('61', '58.05714285714286', '7.', '0.', 'U/S SARDULGARH, PUNJAB', '0.', 'Not Safe'),
+('62', '91.42857142857143', '7.', '1.', 'RIVER GHAGGAR AT D/S OF SURAJPUR', '1.', 'Safe for Drinking'),
+('64', '86.65714285714284', '7.', '1.', 'GAGGAR RIVER WHEN ENTERING IN RAJASTHAN FROM HARYANA NEAR RD NO. 629, RAJASTHAN', '1.', 'Safe for Drinking'),
+('65', '89.5142857142857', '7.', '1.', 'RIVER BANJAR AT MALANJKHAND NEAR W/S INTAKE POINT, JABALPUR', '1.', 'Safe for Drinking'),
+('66', '89.5142857142857', '7.', '1.', 'BUGI RIVER AT MIBANPARA, SOUTH GARO HILLS', '1.', 'Safe for Drinking'),
+('67', '73.31428571428572', '7.', '0.', 'UMTREW AT BYRNIHAT EAST, MEGHALAYA', '0.', 'Not Safe'),
+('69', '65.71428571428571', '7.', '0.', 'TLAWNG UPSTREAM AIZAWL', '0.', 'Not Safe'),
+('70', '65.71428571428571', '7.', '0.', 'TUIRIAL LOWER CATCHMENT', '0.', 'Not Safe'),
+('71', '84.74285714285715', '7.', '1.', 'GUMTI AT U/S SOUTH TRIPURA,TRIPURA', '1.', 'Safe for Drinking'),
+('73', '81.88571428571429', '7.', '1.', 'CHANDRAPUR, AGARTALA D/S OF HAORA RIVER, TRIPURA', '1.', 'Safe for Drinking'),
+('74', '60.0', '7.', '0.', 'DAMANGANGA AT D/S OF MADHUBAN', '0.', 'Not Safe'),
+('75', '66.65714285714286', '7.', '0.', 'KOLAK AT PATALIA BDG', '0.', 'Not Safe'),
+('76', '84.74285714285715', '7.', '1.', 'RIVER SINQUERIM NEAR NERUL TEMPLE', '1.', 'Safe for Drinking'),
+('77', '84.74285714285715', '6.', '1.', 'RIVER TALPONA AT CANACONA', '1.', 'Safe for Drinking'),
+('79', '86.65714285714284', '7.', '1.', 'AMBA AT D/S OF WAKEN BRIDGENANU/S OF JS PETROCHEMICALS, WAKENPHATA, ROHA', '1.', 'Safe for Drinking'),
+('80', '84.74285714285715', '7.', '1.', 'ACHENKOIL AT THUMPAMON', '1.', 'Safe for Drinking'),
+('81', '76.17142857142858', '7.', '0.', 'RIVER VALAPATTANAM AT PARASSINIKADAVU, KANNUR', '0.', 'Not Safe'),
+('83', '86.65714285714284', '7.', '1.', 'NAGAVALLI AT THOTAPALLI REGULATOR', '1.', 'Safe for Drinking'),
+('84', '86.65714285714284', '7.', '1.', 'RIVER VAMSHADHARA, KALINGAPATNAM,VIZIANAGARAM', '1.', 'Safe for Drinking'),
+('87', '81.88571428571429', '7.', '1.', 'KALI AT D/S WEST COAST PAPER MILL', '1.', 'Safe for Drinking'),
+('88', '84.74285714285715', '7.', '1.', 'KALI AT U/S OF WCPM, DANDELI', '1.', 'Safe for Drinking'),
+('91', '75.2', '7.', '0.', 'BUDHABALANGA, D/S OF BARIPADA', '0.', 'Not Safe'),
+('92', '75.2', '8.', '0.', 'BUDHABALANGA AT BALASORE D/S', '0.', 'Not Safe'),
+('94', '62.857142857142854', '7.', '0.', 'ARASALAR RIVER KARAIKAL REGION', '0.', 'Not Safe'),
+('95', '81.88571428571429', '7.', '1.', 'PALAR AT VANIYAMBADI WATER SUPPLY HEAD WORK', '1.', 'Safe for Drinking'),
+('97', '37.142857142857146', '8.', '0.', 'DAMANGANGA AT VILLAGE NAMDHA, VAPI', '0.', 'Not Safe'),
+('98', '86.65714285714284', '7.', '1.', 'AMBA RIVER AT D/S OF WAKEN BRIDGENANU/S OF JS PETRO CHEMICALS, WAKENPHATA, ROHA', '1.', 'Safe for Drinking'),
+('99', '81.88571428571429', '6.', '1.', 'PAMBA AT THAKAZHY, KERALA', '1.', 'Safe for Drinking'),
+('100', '75.22857142857143', '7.', '0.', 'TUIRIAL UPPER CATCHMENT', '0.', 'Not Safe');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
