@@ -1,13 +1,8 @@
-# Clean Water and Sanitation
-<b><h3>What's the problem ?</h3> </b><hr>
-There is scarcity of clean water everywhere. Most people don't know whether the water present in their area that they are drinking are safe or not. <br><br>
-<h3>How technology helps ?</h3><hr>
-We have predicted the quality of water using Machine learning algorithm. We have taken a dataset and have formatted the data to fit into the ML model. We have trained the model using the random forest classifier and it has given us a perfect efficiency of 100%.<br>
-
+# Clean Water Analysis
 <h3>Idea</h3><hr>
 We need to create a website in which we have connected the MYQL database with the website using PHP and storing the data in the database. We need to create a machine learning model which will predict whether the water is safe for drinking or not. The data will be taken from the user and drinking quality of water will be predicted through the machine learning model.
 
-<h3>The Highlights of Our Project</h3>
+<h3>The Highlights of my project</h3>
 <hr>
 The roadmap of our project is <br><br>
 <img src="roadmap.PNG">
@@ -19,5 +14,5 @@ We have predicted whether the water is safe or not by training a machine learnin
 <br><br>
 THe database which contains all the data is given below:- <br>
 <img src="database.PNG">
-<br>
-Please import the db files in MYSQL and then use the folder.
+<br><br>
+Please import db files in MYSQL and then use the folders.
